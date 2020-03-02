@@ -1,0 +1,7 @@
+version: '3'
+services:
+  course:
+    build: .
+    restart: always
+    ports:
+      - "3002:8080"

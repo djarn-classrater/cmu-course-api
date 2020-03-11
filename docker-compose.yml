@@ -1,7 +1,14 @@
-version: '3'
+version: '2'
 services:
-  course:
+  courses:
     build: .
     restart: always
     ports:
       - "3002:8080"
+    networks:
+      - djarn
+
+networks:
+  djarn:
+    external: true
+
